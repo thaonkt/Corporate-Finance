@@ -11,3 +11,6 @@ Thumbs.db
 # Editor backups
 *.tmp
 *.bak
+
+# Claude Code internal — never commit
+.claude/worktrees/
