@@ -34,7 +34,21 @@ spec-driven analytical work.
 
 ## Part A — What the Spec Got Right
 
-### 1. Data inputs were explicit and complete
+### Section-by-Section Verdict Table
+
+| Spec Section | Title | Verdict | Evidence from LLM Output |
+|---|---|---|---|
+| 1 | Scope & Objective | **Clear** | LLM correctly identified audience, reporting standard, fiscal year, and analytical objective in its opening |
+| 2 | Model Architecture | **Clear** | LLM referenced tab layout and color-coding in its methodology note |
+| 3 | Data Inputs | **Clear (FY2025) / Missing (FY2024 IS)** | All FY2025 ratios exact; FY2024 TIE wrong because FY2024 income statement was absent |
+| 4 | Named Range Conventions | **Clear** | LLM used named-range notation correctly throughout all formula references |
+| 5 | Derived Inputs | **Clear** | LLM used avg_assets and avg_equity correctly; Du Pont variance = 0.00pp |
+| 6 | Ratio Definitions & Formulas | **Clear** | All 17 FY2025 ratios computed correctly; DSO and DIO included after HIL fix |
+| 7 | Validation Rules | **Clear** | LLM self-disclosed FY2024 data limitation — consistent with validation rule awareness |
+| 8 | Analysis Requirements | **Clear** | All six ratio categories addressed with benchmarks and cross-category connections |
+| 9 | Du Pont Decomposition | **Clear** | Exact three-factor table with driver identification; sustainability assessed |
+| 10 | Strategic Recommendations | **Clear** | Four recs, each with ratio evidence and specific action — format followed exactly |
+| 11 | Output Format | **Vague** | Correct structure but ~3,500 words vs. 1,800 target — no per-section word limits given |
 
 Section 3 of the spec provided every financial figure numerically, in
 named-range notation, with units clearly stated (USD thousands). The LLM
@@ -217,3 +231,60 @@ would be re-run quarterly against updated financials, investing in spec
 quality compounds: each improvement eliminates a recurring manual
 correction. The four fixes above would save approximately 90 minutes of
 verification and correction work per quarter.
+
+---
+
+## Part E — Effectiveness Rating
+
+**Rating: 4 / 5**
+
+**Justification:**
+A 4/5 reflects a spec that produced one material error (FY2024 TIE) from
+an identified and fixable gap, zero hallucinations, and strong structural
+output on the first run. The HIL revision at Stage 4 demonstrably improved
+output quality — the Du Pont table was exact, DSO/DIO were computed
+correctly, and EVA had a WACC. The deduction from 5/5 reflects the missing
+FY2024 income statement, which is a significant omission for any analysis
+requiring year-on-year comparison. A spec rating of 5/5 requires that
+the executor can produce a clean output with no post-execution corrections
+— this spec required one material correction and three minor annotations.
+
+**Anchor definitions used:**
+- 5/5 = Zero corrections required; all outputs exact on first run
+- 4/5 = One material correction; cause is a specific, fixable spec gap
+- 3/5 = Multiple corrections; structural gaps in the spec
+- 2/5 = LLM output required substantial rewriting
+- 1/5 = Spec failed to produce usable output
+
+---
+
+## Part F — Forward Link
+
+If I were to write another spec for a different company or a different
+analytical task, the single most important change I would make is to
+enforce **temporal symmetry**: every data dimension provided for the
+current year must be provided identically for the prior year — no
+exceptions, no estimates, no references to "approximate public data."
+The FY2024 TIE error is a clean proof that one asymmetric gap in an
+otherwise complete spec is sufficient to produce a material error in
+the output.
+
+---
+
+## Part G — Retrospective Process Feedback
+
+*Structural suggestion for the spec-retrospective template (≤150 words)*
+
+The current template structure is strong for evaluating a completed spec
+against a completed output. One addition would improve it further: a
+**pre-execution prediction section** completed immediately after writing
+the spec but before running the LLM. This section would ask: "Which three
+sections of this spec are you least confident about, and why?" Completing
+this prediction before seeing the LLM output would force the analyst to
+identify gaps from first principles rather than in hindsight. The
+retrospective would then compare the predicted gaps to the actual gaps —
+measuring the analyst's self-awareness, not just the spec's quality.
+This would be particularly valuable in a professional context where the
+same spec-driven workflow is used repeatedly: analysts who can predict
+their own spec gaps before execution will produce cleaner outputs faster
+than those who rely on post-execution verification alone.

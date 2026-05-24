@@ -16,6 +16,33 @@
 
 ---
 
+## 0. Company & Data Summary
+
+| Field | Detail |
+|-------|--------|
+| Company | Lenovo Group Limited |
+| Ticker / Exchange | 992.HK / HKSE |
+| Reporting Standard | HKFRS (substantially equivalent to IFRS) |
+| Reporting Currency | USD |
+| Units | USD thousands throughout |
+| Fiscal Year End | March 31 |
+| Current Year | FY2025 (April 1, 2024 — March 31, 2025) |
+| Prior Year | FY2024 (April 1, 2023 — March 31, 2024) |
+| Source | Lenovo FY2025 Annual Report, investor.lenovo.com |
+| Share Price | USD 1.102 (HKD 8.58 ÷ 7.78, March 31, 2025) |
+| Shares Outstanding | 12,200,000 thousand |
+| Market Cap | USD 13,444,400 thousand (~USD 13.4B) |
+
+**Key modelling assumptions verified before analysis:**
+- Balance sheet ties both years: FY2025 (44,230,812) and FY2024 (38,750,954) ✅
+- D&A of USD 708,376 thousand derived algebraically — not disclosed separately
+- NCI (USD 590,930 thousand) combined into retained earnings per template structure
+- All named ranges populated at 100% — zero formula errors on Ratios tab
+- Spec retrospective: `deliverables/2026-05-23-nguyen-lenovo-spec-retrospective.md`
+- Verification table: `analysis/validation/2026-05-23-nguyen-lenovo-stage5-verification.md`
+
+---
+
 ## 1. Executive Summary
 
 Lenovo enters FY2025 in measurably better financial shape than twelve months
@@ -344,3 +371,83 @@ investment simultaneously.
   refresh). The comparison captures a trough-to-recovery transition that
   may overstate the sustainability of improvements observed. A five-year
   series would provide more reliable trend signals.
+
+---
+
+## 10. LLM Evaluation & Annotations
+
+**What the LLM executed correctly:**
+
+The LLM followed the spec precisely on every FY2025 ratio. All six ratio
+categories were computed using the correct named-range convention. The
+Du Pont decomposition produced zero variance between the three-factor
+product and the direct ROE computation — a clean result that required
+exact averaging conventions. The four strategic recommendations each
+opened with specific ratio evidence before stating an action, exactly
+as Section 9 of the spec required. The limitations section correctly
+reproduced both modelling notes (D&A plug and NCI treatment) from the
+spec's data inputs section. Overall, 6 of 7 ratios in the verification
+table matched exactly on the first run — a strong spec execution result.
+
+**Where the LLM deviated — one material error:**
+
+FY2024 TIE was stated as 1.40x, derived from an approximate FY2024 EBIT
+of ~USD 1,069M. This figure appears to have come from ISG segment data
+or an alternative public disclosure, not from the consolidated source
+income statement (operating profit: USD 2,005,784). The correct FY2024
+TIE using source data is 2.63x. This error was caused by a **spec gap**
+— the Stage 4 spec provided FY2025 income statement inputs explicitly
+but did not include a complete FY2024 income statement section. The LLM
+was forced to estimate, and it estimated incorrectly. This is documented
+in the spec retrospective as Gap 1.
+
+**Errors caused by spec gaps vs. LLM limitations:**
+
+| Error | Cause | Type |
+|-------|-------|------|
+| FY2024 TIE 1.40x (correct: 2.63x) | Missing FY2024 IS in spec | Spec gap |
+| EVA negative without full explanation | Anomalous tax rate not flagged | Spec gap |
+| Output exceeded 1,800 word target | No per-section word limits | Spec gap |
+
+No evidence of hallucination — every number the LLM produced was either
+correct or traceable to a specific input the spec provided. The LLM did
+not invent data; it estimated from incomplete inputs. This is the
+meaningful distinction between a spec gap and an LLM limitation.
+
+---
+
+## 11. Executive Justification
+
+*In my own voice — not the LLM's.*
+
+I have worked inside Lenovo's Vietnam Commercial Segment for six years.
+The hardware paradox this analysis surfaces is not an abstraction — I
+live it operationally every quarter. We sell high volumes of IDG product
+at thin margins to enterprise accounts while SSG attach rates remain
+lower than they should be. The ratio analysis quantifies what I have
+observed directionally: Lenovo is an extraordinarily efficient revenue
+machine that has not yet converted that efficiency into durable
+profitability.
+
+The most important number in this analysis is not ROE (22.95%) or asset
+turnover (1.66x). It is the SSG operating margin (21.1%) sitting inside
+a consolidated net margin of 2.12%. That gap — between what the
+services business earns and what the consolidated entity reports — is
+the entire strategic story. Every percentage point of revenue mix shift
+from IDG to SSG adds approximately 0.19 percentage points to
+consolidated operating margin. At current leverage, that translates
+to approximately 1.2 percentage points of ROE improvement per point
+of mix shift.
+
+The four recommendations in this analysis are not generic prescriptions
+— they are the levers I would pull if I were advising the commercial
+leadership team in Vietnam: tie manager compensation to SSG attach rate,
+implement milestone billing on ISG projects, ring-fence capital for ISG
+investments, and prioritise TIE improvement over new convertible
+issuance. These are actions that a commercial professional with six
+years of Lenovo operational context would recognise as both analytically
+justified and practically executable.
+
+The LLM produced a technically competent first draft. The judgment —
+what to correct, what to emphasise, what to connect to operational
+reality — is mine.
