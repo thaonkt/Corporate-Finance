@@ -1,7 +1,7 @@
 # Prompt Log — BUS 629 Corporate Finance Project
 **Author:** Nguyen Khong Thanh Thao
 **Company:** Lenovo Group Limited (HKSE: 992)
-**Last updated:** 2026-05-23
+**Last updated:** 2026-05-24
 
 ---
 
@@ -161,6 +161,77 @@ table with named-range formulas and expected day-count outputs (DSO: 49.3
 days, DIO: 42.2 days).
 
 **Version bumped:** 1.0 → 1.1 after all three revisions confirmed correct.
+
+---
+
+## Stage 5 — LLM Analysis Execution and Evaluation
+
+### Session 5 — Spec execution (raw LLM output)
+**Date:** 2026-05-23
+**Tool:** External LLM (spec executed as standalone input)
+**Context:** Fed the complete Stage 4 spec (v1.1) as the sole input to
+produce the full ratio analysis. No additional context provided — the
+spec was required to stand alone per Stage 5 instructions.
+
+**Prompt used:**
+> Execute the following technical specification and produce the complete
+> ratio analysis as specified in Part B Section 10 Output Format.
+> Use only the data and formulas provided in this specification.
+> Do not ask clarifying questions. Produce the full output now.
+> [Full Stage 4 spec text pasted]
+
+**What the model produced:** Complete 9-section ratio analysis covering
+all six ratio categories, Du Pont decomposition, four strategic
+recommendations, and a limitations section. Length approximately 3,500
+words. The LLM self-disclosed one methodological constraint: FY2024
+income statement figures were sourced from public disclosures rather
+than the spec (because the spec did not provide FY2024 income statement
+inputs explicitly).
+
+**What I accepted:** All FY2025 ratio values (verified against my manual
+calculations — 9 of 10 exact match within rounding). The EVA analysis,
+Du Pont decomposition, and all four strategic recommendations.
+
+**What I corrected in the final analysis:**
+- FY2024 TIE corrected from 1.40x (LLM) to 2.59x (my Stage 3 data)
+- Framing of TIE year-on-year improvement adjusted accordingly
+
+**Committed as:** `deliverables/2026-05-23-nguyen-lenovo-llm-raw.md`
+
+---
+
+### Session 6 — Manual verification and discrepancy analysis
+**Date:** 2026-05-23
+**Tool:** Claude (claude.ai) — verification table construction
+**Context:** Built the manual ratio verification table by hand-computing
+10 ratios from Stage 3 financial data and comparing to LLM output.
+
+**Key finding:** One material discrepancy identified (FY2024 TIE),
+one spec gap identified (asset turnover denominator mismatch between
+spec and template). All FY2025 values verified correct.
+
+**Committed as:** `analysis/validation/2026-05-23-nguyen-lenovo-stage5-verification.md`
+
+---
+
+### Session 7 — Repo polish audit
+**Date:** 2026-05-23
+**Tool:** Claude Code (CLI)
+**Context:** Final audit of repo structure against Stage 5 polish
+checklist — READMEs, naming conventions, license, GitHub description.
+
+**Prompt summary:**
+> Audit my repo at C:\Users\knguyen6\Documents\GitHub\Corporate-Finance
+> against the Stage 5 polish checklist. Check: all directories have
+> meaningful READMEs, all files follow YYYY-MM-DD-{lastname}-{slug}
+> naming convention, .gitignore is present, LICENSE is present.
+> Report any gaps. Do not modify anything.
+
+**What the model produced:** Gap list identifying missing LICENSE file
+and GitHub repo description as the two remaining polish items.
+
+**Action taken:** Added MIT LICENSE, updated GitHub repo description
+and About section.
 
 ---
 
