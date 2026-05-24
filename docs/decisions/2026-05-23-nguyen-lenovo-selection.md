@@ -1,143 +1,126 @@
 ---
-template: memo
-purpose: "Executive memo for stage 1 / 2 deliverables — problem framing, analysis summary, and recommendation"
-audience: student
-fields_required: [title, to, from, date, re, executive_summary, background, method, findings, implications, limitations, references]
-naming_convention: "YYYY-MM-DD-{slug}.md"
-courses: [BUS-629]
+stage: 2
+author: Nguyen Khong Thanh Thao
+date: 2026-05-23
+company: Lenovo Group Limited
+ticker: 992.HK
+exchange: HKSE
+course: BUS-629
+to: Adam Stauffer
+from: Nguyen Khong Thanh Thao
+re: Stage 2 Company Selection — Lenovo Group Limited
 ---
 
 # Company Selection Memo — Lenovo Group Limited (HKSE: 992)
 
-**To:** Adam Stauffer, Instructor, BUS 629 VEMBA  
-**From:** Nguyen Khong Thanh Thao  
-**Date:** 2026-05-23  
+**To:** Adam Stauffer, Instructor, BUS 629 VEMBA
+**From:** Nguyen Khong Thanh Thao
+**Date:** 2026-05-23
 **Re:** Stage 2 Company Selection — Lenovo Group Limited for Ratio Analysis
 
 ---
 
-## Executive Summary
+## 1. Executive Summary
 
-I am selecting Lenovo Group Limited (HKSE: 992, ADR: LNVGY) as the subject
-of my ratio analysis for BUS 629. Lenovo is a Hong Kong-listed, globally
-diversified technology company with audited HKFRS financials, two full fiscal
-years of comparable data, and a capital structure undergoing active
-transformation — from a PC-hardware business toward a higher-margin
-infrastructure and services model. As a six-year Lenovo employee in the
-Commercial Segment in Vietnam, I have direct operational context that will
-sharpen my interpretation of the ratios beyond what the numbers alone reveal.
-The FY2024/25 annual report (published May 2025) and FY2023/24 annual report
-are both publicly available on the Lenovo investor relations portal.
+I am selecting Lenovo Group Limited (HKSE: 992) for my BUS 629 ratio
+analysis. Lenovo is a Hong Kong-listed global technology company with audited
+HKFRS financials, two full fiscal years of comparable data, and a capital
+structure mid-transition from PC hardware toward higher-margin infrastructure
+and services. As a six-year employee in Lenovo's Vietnam Commercial Segment,
+I have direct operational context that will sharpen interpretation beyond what
+the numbers alone reveal.
 
 ---
 
-## Background
+## 2. Company Overview
 
-Lenovo Group Limited, founded in 1984 and headquartered in Hong Kong, is one
-of the world's largest technology companies by revenue, serving customers in
-180 markets. The company operates through three segments: Intelligent Devices
-Group (IDG), which includes PCs, tablets, and smartphones; Infrastructure
-Solutions Group (ISG), covering servers and storage; and Solutions and
-Services Group (SSG), which delivers managed services and AI-enabled
-solutions.
+| Field | Detail |
+|-------|--------|
+| Company | Lenovo Group Limited |
+| Ticker / Exchange | 992.HK / HKSE |
+| Industry | Technology Hardware & IT Services |
+| Market Cap | ~USD 13.4B (March 31, 2025) |
+| Reporting Currency | USD |
+| Reporting Standard | HKFRS |
+| Fiscal Year End | March 31 |
+| FY2025 Revenue | USD 69.1B (+21% YoY) |
 
-FY2024/25 revenue reached US$69.1 billion (+21% year-on-year), the Group's
-second-highest in its history, with net income up 36% to US$1.4 billion
-(non-HKFRS basis). Market capitalization stands at approximately US$18.4
-billion as of April 2026. The company reports in USD under HKFRS, with a
-fiscal year ending March 31.
-
-This is a compelling ratio analysis subject because Lenovo is mid-transition:
-non-PC revenue mix reached 47% in FY2024/25 (up five percentage points
-year-on-year), SSG's operating margin reached 21.1%, and ISG is executing
-a restructuring targeting over US$200 million in annualized savings. These
-structural shifts should produce measurable signals across profitability,
-efficiency, and leverage ratios across the two-year comparison window.
+Lenovo operates through three segments: Intelligent Devices Group (IDG —
+PCs, tablets, smartphones), Infrastructure Solutions Group (ISG — servers,
+storage), and Solutions and Services Group (SSG — managed services, AI
+solutions). SSG's operating margin reached 21.1% in FY2025 while non-PC
+revenue mix hit 47% — structural shifts that should produce measurable
+signals across all six ratio categories.
 
 ---
 
-## Method
+## 3. Selection Rationale
 
-Analysis will draw on the BUS 629 performance-ratios template
-(`models/templates/performance-ratios-template.xlsx`), populated with data
-from the following sources:
-
-- **Income Statement, Balance Sheet, Cash Flow:** Lenovo Group FY2024/25 and
-  FY2023/24 Annual Reports, available at
-  `investor.lenovo.com/en/financial/annual-reports`
-- **Market data (share price, shares outstanding):** HKEX disclosure portal
-  and Yahoo Finance (ticker: 0992.HK)
-- **Segment-level data:** Quarterly earnings press releases, available at
-  `investor.lenovo.com`
-
-Reporting standard: HKFRS (substantially equivalent to IFRS). All financials
-are denominated in USD. No currency conversion required. Fiscal year end:
-March 31. Two comparable periods: FY2023/24 and FY2024/25.
+Lenovo represents the classic technology hardware paradox: high revenue
+efficiency masking thin capital returns. With USD 69.1B in revenue against
+USD 44.2B in total assets, asset turnover exceeds 1.7x — yet net margin
+sits at 2.1%. This tension between efficiency and profitability is the
+analytical backbone I will carry into Stage 5 recommendations. The ongoing
+business mix shift toward SSG (21.1% margin) and ISG restructuring
+(USD 200M+ annualized savings target) makes FY2024 vs. FY2025 a
+particularly rich comparison window. My six years in the Commercial Segment
+give me direct visibility into how this paradox plays out operationally.
 
 ---
 
-## Findings
+## 4. Data Availability & Sources
 
-*Preliminary — full findings to follow at Stage 3 after model population.*
+| Statement | Source | Access Date |
+|-----------|--------|-------------|
+| Income Statement, Balance Sheet, Cash Flow | Lenovo FY2025 Annual Report, investor.lenovo.com/en/financial/annual-reports | 2026-05-23 |
+| Market data (share price, shares outstanding) | HKEX filing portal, hkexnews.hk | 2026-05-23 |
+| Segment operating margin | Lenovo FY2025 Q4 Results Press Release, investor.lenovo.com | 2026-05-23 |
 
-Three directional hypotheses based on publicly available data:
-
-1. **Profitability improving but thin:** I expect net profit margin to remain
-   below 2.5% in FY2024/25 despite the 36% net income increase, because
-   Lenovo's hardware-heavy revenue base structurally compresses margins — SSG's
-   21% operating margin is diluted by IDG's volume-driven, low-margin PC
-   business.
-
-2. **Leverage declining modestly:** I expect the debt-to-equity ratio to
-   decrease from FY2023/24 to FY2024/25 because stronger operating cash flows
-   from the SSG growth engine reduce reliance on external financing, even as
-   ISG restructuring costs create short-term drag. Current D/E stands at
-   approximately 59%, with US$4.45B in debt against US$7.49B equity.
-
-3. **Asset turnover high, return on assets low:** I expect asset turnover to
-   remain above 1.3x because Lenovo operates an asset-light distribution model
-   with US$69.1B revenue against US$49.8B total assets — but ROA will remain
-   compressed because thin net margins offset the high turnover.
+Reporting standard: HKFRS. Currency: USD. Fiscal year end: March 31.
+Two comparable periods confirmed available: FY2023/24 and FY2024/25.
 
 ---
 
-## Implications
+## 5. Preliminary Observations
 
-If the hypotheses hold, the ratio analysis will surface a classic technology
-hardware paradox: high revenue efficiency masking low capital returns. This
-has direct implications for how Lenovo's Vietnam commercial team — including
-my own segment — is evaluated. SSG's expansion into managed services and
-AI-enabled solutions is the strategic answer to this paradox; the ratios
-should quantify how far that transition has progressed by FY2024/25.
+1. **Profitability improving but structurally thin:** I expect net profit
+   margin to remain below 2.5% in FY2025 despite 36% net income growth,
+   because SSG's 21% segment margin is diluted by IDG's high-volume,
+   low-margin PC business at the consolidated level.
+
+2. **Leverage stable but interest coverage tight:** I expect TIE to remain
+   below 3.0x because EBIT growth is outpaced by rising finance costs from
+   the USD 2B convertible bond issued in FY2025, leaving limited buffer
+   for an earnings deterioration scenario.
+
+3. **Asset turnover high, ROA compressed:** I expect asset turnover above
+   1.7x because Lenovo's asset-light distribution model generates USD 69.1B
+   revenue against USD 44.2B total assets — but ROA will remain below 6%
+   because thin net margins structurally offset high turnover efficiency.
 
 ---
 
-## Limitations & Next Steps
+## 6. Ratio Categories Preview & Data Collection Plan
 
-- HKFRS vs. U.S. GAAP: lease capitalization and intangible amortization
-  treatment may affect direct comparisons with U.S. peers (Dell, HP). All
-  ratio interpretation will note HKFRS basis.
-- Non-HKFRS adjustments: Lenovo reports both HKFRS and adjusted (non-HKFRS)
-  figures. Analysis will use HKFRS figures for consistency with the template;
-  differences will be flagged.
-- Segment margins are disclosed but segment balance sheets are not fully
-  disaggregated — ratio analysis will be at Group level.
+**Most relevant categories:** Profitability (margin compression vs. SSG
+mix shift), Leverage (convertible bond impact on TIE and debt ratio),
+Efficiency (asset turnover sustainability as ISG scales capital intensity).
 
-Next step: download FY2024/25 and FY2023/24 annual reports and populate the
-Stage 3 financial statement tabs.
+**Statements required:** Income Statement, Balance Sheet, Cash Flow
+(both FY2025 and FY2024 — all confirmed available from annual report).
+
+**Accounting considerations:** HKFRS vs. U.S. GAAP differences in lease
+capitalization and intangible amortization will be noted when benchmarking
+against Dell and HP. Analysis uses HKFRS figures throughout for consistency
+with the template.
 
 ---
 
 ## References
 
-- Lenovo Group Limited. (2025, May 22). *Q4 and Full Year Financial Results
-  FY2024/25*. Retrieved from
-  `investor.lenovo.com/en/financial/results/press_2425_q4.pdf`
-- Lenovo Group Limited. *Annual Reports FY2023/24 and FY2024/25*. Retrieved
-  from `investor.lenovo.com/en/financial/annual-reports`
-- HKEX. Lenovo Group Limited (992) disclosure filings. Retrieved from
-  `hkexnews.hk`
-- Simply Wall St. (2026). *Lenovo Group Balance Sheet Health*. Retrieved from
-  `simplywall.st/stocks/hk/tech/hkg-992/lenovo-group-shares/health`
-- CompaniesMarketCap. (2026, April). *Lenovo Market Cap*. Retrieved from
-  `companiesmarketcap.com/lenovo/marketcap/`
+- Lenovo Group Limited. (2025, May 22). *Annual Report FY2024/25*.
+  investor.lenovo.com/en/financial/annual-reports. Accessed 2026-05-23.
+- Lenovo Group Limited. (2025, May 22). *Q4 and Full Year Results Press
+  Release FY2024/25*. investor.lenovo.com. Accessed 2026-05-23.
+- HKEX. (2025). *Lenovo Group Limited (992) — Disclosure Filings*.
+  hkexnews.hk. Accessed 2026-05-23.
